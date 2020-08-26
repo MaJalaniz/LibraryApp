@@ -3,8 +3,8 @@
 *The project will use JDBC, JSPs, Servlets and Maven
 
 OBJECTIVE: Create a website for a library where you can login as 
-  1. A librarian who will manage books and approve patron accounts.
-  2. A patron who can checkout and return books.
+  - A librarian who will manage books and approve patron accounts.
+  - A patron who can checkout and return books.
   
   
 Patron User Actions-SIGN UP
