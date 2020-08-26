@@ -6,6 +6,7 @@ OBJECTIVE: Create a website for a library where you can login as
   1. A librarian who will manage books and approve patron accounts.
   2. A patron who can checkout and return books.
   
+  
 Patron User Actions-SIGN UP
   1. Pass info for account in a form.
   2. Account will be "frozen" once created and will not be able to check out any books.
