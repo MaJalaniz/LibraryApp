@@ -19,6 +19,12 @@ public class ConnectionManager {
 			}
 		
 	}
+	private static Connection getConnection() {
+		if(connection == null) {
+			makeConnection();
+		}
+		return connection;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
