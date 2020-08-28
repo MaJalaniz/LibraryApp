@@ -55,7 +55,13 @@ public class PatronDao {
 		try {
 			PreparedStatement ps = connection.prepareStatement("select * from book where rented = 0");
 			ResultSet rs = ps.executeQuery();
-			while(rs.next)
+			while(rs.next()) {
+				Book book = new Book(rs.getString(1), rs.getString(2), rs.getString(3), rs.getInt(4), LocalDate.parse(rs.getString(5)));
+				availableBooks.add(book);
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
 		}
+		return availableBooks;
 	}
 }
