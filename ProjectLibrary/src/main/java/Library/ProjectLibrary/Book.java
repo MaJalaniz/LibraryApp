@@ -68,6 +68,14 @@ public class Book {
 		public void setDate(LocalDate date) {
 			this.date = date;
 		}
+		
+
+
+	@Override
+		public String toString() {
+			return "Book [isbn=" + isbn + ", title=" + title + ", description=" + description + ", rented=" + rented
+					+ ", date=" + date + "]";
+		}
 
 
 	public static void main(String[] args) {
