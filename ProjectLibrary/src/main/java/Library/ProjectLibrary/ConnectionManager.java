@@ -34,7 +34,7 @@ public class ConnectionManager {
 			}
 		
 	}
-	private static Connection getConnection() {
+	public static Connection getConnection() {
 		if(connection == null) {
 			makeConnection();
 		}
